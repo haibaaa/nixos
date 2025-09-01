@@ -1,8 +1,16 @@
 # Git configuration
-{config, ...}: let
-  username = config.var.git.username;
-  email = config.var.git.email;
-in {
+{config, ...}: {
+  programs.ssh = {
+    enable = true;
+
+    matchBlocks = {
+      "github.com" = {
+        hostname = "ssh.github.com";
+        port = 443;
+        user = "git";
+      };
+    };
+  };
   programs.git = {
     enable = true;
     userName = "haibaaa";
