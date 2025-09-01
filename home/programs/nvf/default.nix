@@ -14,6 +14,7 @@
     ./utils.nix
     ./mini.nix
     ./neorg.nix
+    ./plugins.nix
   ];
 
   programs.nvf = {
