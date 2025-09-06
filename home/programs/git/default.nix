@@ -1,16 +1,14 @@
 # Git configuration
-{config, ...}: {
-  programs.ssh = {
-    enable = true;
+{...}: {
+  programs.ssh.enable = true;
 
-    matchBlocks = {
-      "github.com" = {
-        hostname = "ssh.github.com";
-        port = 443;
-        user = "git";
-      };
-    };
-  };
+  # Deploy a full SSH config file
+  home.file.".ssh/config".text = ''
+    Host github.com
+        Hostname ssh.github.com
+        Port 443
+        User git
+  '';
   programs.git = {
     enable = true;
     userName = "haibaaa";

@@ -11,6 +11,7 @@
           config = {
             workspaces = {
               notes = "~/stf/notes";
+              read = "~/stf/read";
             };
             default_workspace = "notes";
           };
