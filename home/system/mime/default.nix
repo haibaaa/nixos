@@ -83,6 +83,13 @@ with lib; let
       (key: map (type: attrsets.nameValuePair type defaultApps."${key}"))
       mimeMap));
 in {
+  # xdg = {
+  #   configFile."mimeapps.list".force = true;
+  #   mimeApps = {
+  #     enable = true;
+  #     associations.added = associations;
+  #     defaultApplications = associations;
+  #   };
   xdg = {
     configFile."mimeapps.list".force = true;
     mimeApps = {

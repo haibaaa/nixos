@@ -33,8 +33,8 @@
     ../../home/system/zathura
     ../../home/system/mime
     ../../home/system/udiskie
-    # ../../home/system/hypridle
-    # ../../home/system/clipman
+    ../../home/system/hypridle
+    ../../home/system/clipman
   ];
 
   home = {
@@ -56,7 +56,6 @@
       gnome-clocks # Clocks app
       gnome-text-editor # Basic graphic text editor
       mpv # Video player
-      brave # Web browser
 
       # Privacy
       session-desktop # Session app, private messages
@@ -88,6 +87,8 @@
       fastfetch
 
       # Just cool
+      wireshark
+      obs-studio
       peaclock
       cbonsai
       pipes
