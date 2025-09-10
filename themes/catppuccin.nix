@@ -83,6 +83,6 @@
     };
 
     polarity = "dark";
-    image = ../wallpapers/app/static/wallpapers/beach-path.png;
+    image = ../wallpapers/offscript.png;
   };
 }
