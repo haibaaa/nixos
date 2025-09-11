@@ -88,6 +88,7 @@
 
       astro.enable = true;
       go.enable = true;
+      python.enable = true;
       markdown = {
         enable = true;
         extensions = {

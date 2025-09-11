@@ -83,6 +83,6 @@
     };
 
     polarity = "dark";
-    image = ../wallpapers/offscript.png;
+    image = ../wallpapers/coffee-shop.png;
   };
 }
