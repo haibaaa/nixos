@@ -8,6 +8,7 @@
     ./variables.nix
 
     # Programs
+    ../../home/programs/tmux
     ../../home/programs/kitty
     ../../home/programs/nvf
     ../../home/programs/shell
