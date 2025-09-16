@@ -43,6 +43,9 @@
     homeDirectory = "/home/" + config.var.username;
 
     packages = with pkgs; [
+      # staged for deletion
+      # google-chrome
+
       # Apps
       github-cli # Github cli
       bitwarden # Password manager
@@ -71,6 +74,8 @@
       jdk24
       bun
       nodejs
+      openssl
+      prisma-engines
       python3
       jq
       just
@@ -88,7 +93,6 @@
       fastfetch
 
       # Just cool
-      wireshark
       obs-studio
       peaclock
       cbonsai

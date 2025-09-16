@@ -1,10 +1,8 @@
 {
-  # https://github.com/anotherhadi/nixy
   description = ''
     Nixy simplifies and unifies the Hyprland ecosystem with a modular, easily customizable setup.
     It provides a structured way to manage your system configuration and dotfiles with minimal effort.
   '';
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -17,6 +15,7 @@
     sops-nix.url = "github:Mic92/sops-nix";
     nixarr.url = "github:rasmus-kirk/nixarr";
     nvf.url = "github:notashelf/nvf";
+    # nix-ai-tools = "github:numtide/nix-ai-tools";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,22 +34,38 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
+  outputs = inputs @ {nixpkgs, ...}: let
+    system = "x86_64-linux";
 
-  outputs = inputs @ {nixpkgs, ...}: {
+    # Create pkgs with insecure packages allowed for dev shells
+    pkgs = import nixpkgs {
+      inherit system;
+      config = {
+        permittedInsecurePackages = ["openssl-1.1.1w"];
+        allowUnfree = true;
+        allowBroken = true;
+      };
+    };
+  in {
+    # NixOS system configuration
     nixosConfigurations = {
-      nixos =
-        # CHANGEME: This should match the 'hostname' in your variables.nix file
-        nixpkgs.lib.nixosSystem {
-          modules = [
-            {
-              nixpkgs.overlays = [];
-              _module.args = {inherit inputs;};
-            }
-            inputs.home-manager.nixosModules.home-manager
-            inputs.stylix.nixosModules.stylix
-            ./hosts/nixos/configuration.nix # CHANGEME: change the path to match your host folder
-          ];
-        };
+      nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          {
+            nixpkgs.overlays = [];
+            nixpkgs.config = {
+              permittedInsecurePackages = ["openssl-1.1.1w"];
+              allowBroken = true;
+              allowUnfree = true;
+            };
+            _module.args = {inherit inputs;};
+          }
+          inputs.home-manager.nixosModules.home-manager
+          inputs.stylix.nixosModules.stylix
+          ./hosts/nixos/configuration.nix # Adjust path if needed
+        ];
+      };
     };
   };
 }
