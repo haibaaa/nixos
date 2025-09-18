@@ -15,7 +15,6 @@
     sops-nix.url = "github:Mic92/sops-nix";
     nixarr.url = "github:rasmus-kirk/nixarr";
     nvf.url = "github:notashelf/nvf";
-    # nix-ai-tools = "github:numtide/nix-ai-tools";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,8 +35,6 @@
   };
   outputs = inputs @ {nixpkgs, ...}: let
     system = "x86_64-linux";
-
-    # Create pkgs with insecure packages allowed for dev shells
     pkgs = import nixpkgs {
       inherit system;
       config = {
@@ -47,7 +44,6 @@
       };
     };
   in {
-    # NixOS system configuration
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -63,7 +59,8 @@
           }
           inputs.home-manager.nixosModules.home-manager
           inputs.stylix.nixosModules.stylix
-          ./hosts/nixos/configuration.nix # Adjust path if needed
+          # Additional modules here, if any
+          ./hosts/nixos/configuration.nix
         ];
       };
     };

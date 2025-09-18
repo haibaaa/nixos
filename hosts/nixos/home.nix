@@ -47,6 +47,7 @@
       # google-chrome
 
       # Apps
+      glow #md reader
       github-cli # Github cli
       bitwarden # Password manager
       vlc # Video player
