@@ -45,9 +45,12 @@
     packages = with pkgs; [
       # staged for deletion
       # google-chrome
+      geoclue2
+
+      presenterm #presentations
+      glow #md reader
 
       # Apps
-      glow #md reader
       github-cli # Github cli
       bitwarden # Password manager
       vlc # Video player
