@@ -7,7 +7,7 @@
 #- - `brightness-set [value]` sets the brightness to the given value.
 #- - `brightness-change [up|down] [value]` increases or decreases the brightness by the given value.
 {pkgs, ...}: let
-  increments = "5";
+  increments = "1";
 
   brightness-change = pkgs.writeShellScriptBin "brightness-change" ''
     [[ $1 == "up" ]] && ${pkgs.brightnessctl}/bin/brightnessctl set ''${2-${increments}}%+

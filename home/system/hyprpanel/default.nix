@@ -34,6 +34,7 @@ in {
     enable = true;
 
     settings = {
+      # Keep media module but hide the text label
       bar.layouts = {
         "*" = {
           left = ["dashboard" "workspaces" "windowtitle"];
@@ -48,6 +49,14 @@ in {
             "notifications"
           ];
         };
+      };
+
+      bar.media = {
+        format = ""; # Empty format string
+        label = false;
+        truncation = true;
+        truncation_size = 0;
+        show_active_only = true;
       };
 
       theme.font.name = font;
@@ -102,6 +111,7 @@ in {
       theme.bar.menus.card_radius = toString rounding + "px";
       theme.bar.menus.border.size = toString border-size + "px";
       theme.bar.menus.border.radius = toString rounding + "px";
+      theme.bar.menus.menu.media.label = false;
       theme.bar.menus.menu.media.card.tint = 90;
 
       bar.launcher.icon = "";
@@ -119,7 +129,6 @@ in {
       bar.bluetooth.label = false;
       bar.clock.format = "%a %b %d  %I:%M %p";
       bar.notifications.show_total = true;
-      bar.media.show_active_only = true;
 
       bar.customModules.updates.pollingInterval = 1440000;
       bar.customModules.cava.showIcon = false;
