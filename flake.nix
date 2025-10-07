@@ -29,7 +29,7 @@
     };
     search-nixos-api.url = "github:anotherhadi/search-nixos-api";
     eleakxir = {
-      url = "github:anotherhadi/eleakxir-temp";
+      url = "github:anotherhadi/eleakxir";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
