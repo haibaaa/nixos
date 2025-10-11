@@ -137,6 +137,7 @@ in {
         mfact = 0.5;
       };
 
+      # gestures = {workspace_swipe = true;};
       gesture = "3, horizontal, workspace";
 
       misc = {
