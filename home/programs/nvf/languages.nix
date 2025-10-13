@@ -90,11 +90,14 @@
       go.enable = true;
       python.enable = true;
       markdown = {
-        enable = true;
+        enable = true; # keep markdown support enabled
         extensions = {
           markview-nvim = {
-            enable = true;
+            enable = true; # keep markview-nvim enabled
           };
+        };
+        format = {
+          enable = false; # disable the markdown formatter explicitly
         };
         extraDiagnostics.enable = true;
       };
