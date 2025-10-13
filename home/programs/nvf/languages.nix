@@ -99,7 +99,7 @@
         format = {
           enable = false; # disable the markdown formatter explicitly
         };
-        extraDiagnostics.enable = true;
+        extraDiagnostics.enable = false;
       };
       ts = {
         enable = true;
