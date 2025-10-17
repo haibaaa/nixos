@@ -47,6 +47,7 @@
       # google-chrome
       geoclue2
 
+      # firefox
       presenterm #presentations
       glow #md reader
 
