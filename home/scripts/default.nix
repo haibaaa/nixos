@@ -1,5 +1,8 @@
 {
   imports = [
+    # personal
+    ./hdmi
+
     ./nixy
     ./sounds
     ./brightness

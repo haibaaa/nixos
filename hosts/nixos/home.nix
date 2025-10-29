@@ -47,6 +47,9 @@
       # google-chrome
       geoclue2
 
+      # pretty json
+      jq
+
       # firefox
       presenterm #presentations
       glow #md reader
