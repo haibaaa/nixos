@@ -44,7 +44,13 @@
 
     packages = with pkgs; [
       # staged for deletion
+      # bitwarden # Password manager
       # google-chrome
+      # protonvpn-gui
+      # protonvpn-cli
+      # proton-pass
+      # protonmail-desktop
+      # proton-authenticator
       geoclue2
 
       # pretty json
@@ -56,7 +62,6 @@
 
       # Apps
       github-cli # Github cli
-      bitwarden # Password manager
       vlc # Video player
       blanket # White-noise app
       obsidian # Note taking app
@@ -71,15 +76,10 @@
 
       # Privacy
       session-desktop # Session app, private messages
-      protonvpn-gui
-      protonvpn-cli
-      proton-pass
-      protonmail-desktop
-      proton-authenticator
 
       # Dev
       go
-      jdk24
+      jdk25
       bun
       nodejs
       openssl

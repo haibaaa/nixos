@@ -5,7 +5,14 @@
   programs.nixcord = {
     enable = true;
     dorion.enable = true;
-    vesktop.enable = true;
+    # vesktop.enable = true;
+
+    # Disable the withSystemVencord option to avoid patch failure
+    # vesktop = {
+    # Assuming this option corresponds to the patch causing build failure
+    #  withSystemVencord = false;
+    #};
+
     config = {
       themeLinks = [
         "https://refact0r.github.io/system24/build/system24.css"
