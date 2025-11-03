@@ -17,7 +17,7 @@
       forceSSL = true;
 
       root = "${
-        inputs.eleakxir.packages.${pkgs.system}.frontend
+        inputs.eleakxir.packages.${pkgs.stdenv.hostPlatform.system}.frontend
       }/eleakxir-frontend";
 
       locations."/api/" = {

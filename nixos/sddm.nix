@@ -26,13 +26,13 @@
       Background =
         if "sakura_pixelart_light_static.png" == config.stylix.image
         then
-          pkgs.fetchurl {
+          pkgs.stdenv.hostPlatform.fetchurl {
             url = "https://raw.githubusercontent.com/anotherhadi/awesome-wallpapers/refs/heads/main/app/static/wallpapers/sakura_pixelart_light_animated.gif";
             sha256 = "sha256-qySDskjmFYt+ncslpbz0BfXiWm4hmFf5GPWF2NlTVB8=";
           }
         else if "cat-watching-the-star_pixelart_purple_static.png" == config.stylix.image
         then
-          pkgs.fetchurl {
+          pkgs.stdenv.hostPlatform.fetchurl {
             url = "https://raw.githubusercontent.com/anotherhadi/awesome-wallpapers/refs/heads/main/app/static/wallpapers/cat-watching-the-star_pixelart_purple_animated.gif";
             sha256 = "";
           }
@@ -49,7 +49,7 @@ in {
       theme = "sddm-astronaut-theme";
       settings = {
         Wayland.SessionDir = "${
-          inputs.hyprland.packages."${pkgs.system}".hyprland
+          inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}".hyprland
         }/share/wayland-sessions";
       };
     };

@@ -1,0 +1,11 @@
+building the system configuration...
+evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
+evaluation warning: haiba profile: stylix: zen-browser: `config.stylix.targets.zen-browser.profileNames` is not set. Declare profile names with 'config.stylix.targets.zen-browser.profileNames = [ "<PROFILE_NAME>" ];'.
+evaluation warning: haiba profile: The option `programs.git.aliases' defined in `/nix/store/5w8880mhic8vrrw6dpw90kqaq85bfa52-source/home/programs/git' has been renamed to `programs.git.settings.alias'.
+evaluation warning: haiba profile: The option `programs.git.userEmail' defined in `/nix/store/5w8880mhic8vrrw6dpw90kqaq85bfa52-source/home/programs/git' has been renamed to `programs.git.settings.user.email'.
+evaluation warning: haiba profile: The option `programs.git.userName' defined in `/nix/store/5w8880mhic8vrrw6dpw90kqaq85bfa52-source/home/programs/git' has been renamed to `programs.git.settings.user.name'.
+evaluation warning: haiba profile: The option `programs.git.extraConfig' defined in `/nix/store/5w8880mhic8vrrw6dpw90kqaq85bfa52-source/home/programs/git/signing.nix' and `/nix/store/5w8880mhic8vrrw6dpw90kqaq85bfa52-source/home/programs/git' has been renamed to `programs.git.settings'.
+evaluation warning: haiba profile: `programs.ssh` default values will be removed in the future.
+                    Consider setting `programs.ssh.enableDefaultConfig` to false,
+                    and manually set the default values you want to keep at
+                    `programs.ssh.matchBlocks."*"`.

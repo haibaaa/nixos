@@ -5,10 +5,10 @@
   ...
 }: {
   wayland.windowManager.hyprland = {
-    plugins = [inputs.hyprland-plugins.packages.${pkgs.system}.hyprexpo];
+    plugins = [inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprexpo];
   };
   # wayland.windowManager.hyprland = {
-  #   plugins = [inputs.hyprspace.packages.${pkgs.system}.Hyprspace];
+  #   plugins = [inputs.hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace];
   #   settings = {
   #     plugin = {
   #       overview = {
