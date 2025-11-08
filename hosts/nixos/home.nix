@@ -55,9 +55,6 @@
       qpdf
       geoclue2
 
-      # pretty json
-      jq
-
       # firefox
       presenterm #presentations
       glow #md reader
@@ -81,6 +78,7 @@
 
       # Dev
       go
+      rustup
       jdk25
       bun
       nodejs
