@@ -86,6 +86,7 @@
       enableFormat = true;
       enableTreesitter = true;
 
+      clang.enable = true;
       astro.enable = true;
       go.enable = true;
       python.enable = true;

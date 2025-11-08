@@ -51,8 +51,8 @@
       # proton-pass
       # protonmail-desktop
       # proton-authenticator
+      # ncspot
       qpdf
-      ncspot
       geoclue2
 
       # pretty json
