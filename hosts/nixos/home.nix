@@ -105,6 +105,7 @@
       peaclock
       cbonsai
       pipes
+      gnumake
       cmatrix
 
       # Backup

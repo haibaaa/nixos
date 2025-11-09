@@ -5,6 +5,7 @@
     withNodeJs = true;
     # syntaxHighlighting = true;
     options = {
+      number = false;
       autoindent = true;
       smartindent = true;
       shiftwidth = 2;

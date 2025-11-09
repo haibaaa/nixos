@@ -6,10 +6,12 @@
     options = {
       guioptions = "v";
       adjust-open = "width";
+      statusbar = true;
       statusbar-basename = true;
+      info-on-open = true;
       render-loading = false;
       scroll-step = 120;
-      "selection-clipboard" = "clipboard"; # Add this line to enable clipboard copy
+      "selection-clipboard" = "clipboard";
     };
   };
 }
