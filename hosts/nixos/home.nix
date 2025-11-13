@@ -55,6 +55,8 @@
       qpdf
       geoclue2
 
+      zed-editor
+
       # firefox
       presenterm #presentations
       glow #md reader
