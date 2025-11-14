@@ -56,6 +56,8 @@
       geoclue2
 
       zed-editor
+      helix
+      # emacs nah
 
       # firefox
       presenterm #presentations
