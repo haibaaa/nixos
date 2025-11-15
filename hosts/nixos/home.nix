@@ -57,7 +57,6 @@
 
       zed-editor
       helix
-      # emacs nah
 
       # firefox
       presenterm #presentations
@@ -83,6 +82,7 @@
       # Dev
       go
       rustup
+      uv
       jdk25
       bun
       nodejs
