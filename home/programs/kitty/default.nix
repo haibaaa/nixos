@@ -10,6 +10,7 @@
       "ctrl+l" = ''kitten pass_keys.py right  ctrl+l'';
     };
     settings = {
+      font_size = 21;
       scrollback_lines = 10000;
       initial_window_width = 1200;
       initial_window_height = 600;

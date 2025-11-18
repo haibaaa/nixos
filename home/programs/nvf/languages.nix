@@ -93,9 +93,12 @@
       markdown = {
         enable = true; # keep markdown support enabled
         extensions = {
-          markview-nvim = {
-            enable = true; # keep markview-nvim enabled
+          render-markdown-nvim = {
+            enable = true;
           };
+          # markview-nvim = {
+          #   enable = true;
+          # };
         };
         format = {
           enable = false; # disable the markdown formatter explicitly
