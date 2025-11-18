@@ -57,6 +57,8 @@
 
       zed-editor
       helix
+      # because thunar is ass
+      yazi
 
       # firefox
       presenterm #presentations

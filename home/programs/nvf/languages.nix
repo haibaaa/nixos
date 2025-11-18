@@ -82,7 +82,7 @@
     };
     languages = {
       enableDAP = true;
-      enableExtraDiagnostics = true;
+      enableExtraDiagnostics = false;
       enableFormat = true;
       enableTreesitter = true;
 

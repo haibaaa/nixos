@@ -7,7 +7,7 @@ with lib; let
     image = ["imv-dir.desktop"];
     audio = ["mpv.desktop"];
     video = ["mpv.desktop"];
-    directory = ["thunar.desktop"];
+    directory = ["yazi.desktop"];
     office = ["libreoffice.desktop"];
     pdf = ["zathura.desktop"];
     terminal = ["kitty.desktop"];
