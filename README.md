@@ -2,6 +2,7 @@
 - [ ] set-up niri 
 - [ ] change login --> sddm
 - [ ] wofi --> rofi
+- [ ] wallpaper manager
 - [ ] lockscreen with luaPam and minimal exitscreen
     - https://github.com/raexera/yoru
 - [ ] swaybg

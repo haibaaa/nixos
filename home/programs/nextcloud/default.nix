@@ -2,7 +2,7 @@
 # This is the client, check /server-modules/nextcloud.nix for the server module.
 {
   services.nextcloud-client = {
-    enable = true;
-    startInBackground = true;
+    enable = false;
+    # startInBackground = true;
   };
 }

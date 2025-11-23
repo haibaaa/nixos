@@ -22,6 +22,9 @@
     ../../home/programs/discord
     ../../home/programs/tailscale
 
+    # personal
+    ../../home/programs/yazi
+
     # Scripts
     ../../home/scripts # All scripts
 
@@ -36,6 +39,9 @@
     ../../home/system/udiskie
     ../../home/system/hypridle
     ../../home/system/clipman
+
+    # hyprscratch input
+    ../../home/system/hyprscratch
   ];
 
   home = {
@@ -45,13 +51,8 @@
     packages = with pkgs; [
       # staged for deletion
       # bitwarden # Password manager
-      # google-chrome
-      # protonvpn-gui
-      # protonvpn-cli
-      # proton-pass
-      # protonmail-desktop
-      # proton-authenticator
       # ncspot
+
       qpdf
       geoclue2
 
@@ -60,6 +61,7 @@
       # because thunar is ass
       yazi
 
+      qutebrowser
       # firefox
       presenterm #presentations
       glow #md reader
@@ -124,6 +126,5 @@
     # Don't touch this
     stateVersion = "24.05";
   };
-
   programs.home-manager.enable = true;
 }

@@ -4,27 +4,38 @@
       [
         "$mod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty" # kitty
         "$shiftMod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e tmux" # tmux
-        "$mod,E, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e yazi"
-        "$mod,V, exec, clipboard" # Clipboard picker with wofi
-        "$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
-        "$mod,X, exec, powermenu" # Powermenu
-        "$mod,D, exec, menu" # Launcher
-        "$mod,C, exec, quickmenu" # Quickmenu
-        "$mod,T, exec, hyprfocus-toggle" # Toggle HyprFocus
+        "$mod, E, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e yazi"
+        "$mod, V, exec, clipboard" # Clipboard picker with wofi
+        "$mod, K, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
+        "$mod, X, exec, powermenu" # Powermenu
+        "$mod, D, exec, menu" # Launcher
+        "$mod, period, exec, hyprfocus-toggle" # Toggle HyprFocus
 
-        "$mod,Q, killactive," # Close window
-        "$mod,SPACE, togglefloating," # Toggle Floating
-        "$ALT,RETURN, fullscreen" # Toggle Fullscreen
-        "$mod,left, movefocus, l" # Move focus left
-        "$mod,right, movefocus, r" # Move focus Right
-        "$mod,up, movefocus, u" # Move focus Up
-        "$mod,down, movefocus, d" # Move focus Down
+        "$mod, Q, killactive," # Close window
+        "$mod, SPACE, togglefloating," # Toggle Floating
+        "$ALT, RETURN, fullscreen" # Toggle Fullscreen
+        "$mod, left, movefocus, l" # Move focus left
+        "$mod, right, movefocus, r" # Move focus Right
+        "$mod, up, movefocus, u" # Move focus Up
+        "$mod, down, movefocus, d" # Move focus Down
 
-        "$mod,PRINT, exec, screenshot region" # Screenshot region
-        "$shiftMod,PRINT, exec, screenshot window" # Screenshot window
+        "$mod, PRINT, exec, screenshot region" # Screenshot region
+        "$shiftMod, PRINT, exec, screenshot window" # Screenshot window
 
-        "$shiftMod,T, exec, hyprpanel-toggle" # Toggle hyprpanel
-        "$mod,F2, exec, night-shift" # Toggle night shift
+        "$shiftMod, B, exec, hyprpanel-toggle" # Toggle hyprpanel
+        "$mod, F2, exec, night-shift" # Toggle night shift
+
+        "$mod, B, exec, hyprscratch toggle btop"
+        "$mod, N, exec, hyprscratch toggle nixy"
+        "$mod, M, exec, hyprscratch toggle note"
+        "$mod, slash, exec, hyprscratch toggle quickterm"
+
+        "$mod ALT, S, movetoworkspacesilent, special"
+        "$mod ALT, S, movetoworkspace, previous"
+        "$mod, S, togglespecialworkspace"
+
+        "$mod, H, workspace, e-1"
+        "$mod, L, workspace, e+1"
       ]
       ++ (builtins.concatLists (builtins.genList (i: let
           ws = i + 1;

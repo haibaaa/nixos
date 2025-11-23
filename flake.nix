@@ -31,6 +31,10 @@
       url = "github:KZDKM/Hyprspace";
       inputs.hyprland.follows = "hyprland";
     };
+    hyprscratch = {
+      url = "github:sashetophizika/hyprscratch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     search-nixos-api.url = "github:anotherhadi/search-nixos-api";
     eleakxir = {
       url = "github:anotherhadi/eleakxir";
@@ -63,6 +67,7 @@
           }
           inputs.home-manager.nixosModules.home-manager
           inputs.stylix.nixosModules.stylix
+
           # Additional modules here, if any
           ./hosts/nixos/configuration.nix
         ];

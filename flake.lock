@@ -666,6 +666,26 @@
         "type": "github"
       }
     },
+    "hyprscratch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761915610,
+        "narHash": "sha256-f1AoWb/+JJA6CWAMSaNPgj/arIcE5QVxURpLrYyrxqU=",
+        "owner": "sashetophizika",
+        "repo": "hyprscratch",
+        "rev": "f5b5d4f52571ecc98649d6d7fddd85be6a96263d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sashetophizika",
+        "repo": "hyprscratch",
+        "type": "github"
+      }
+    },
     "hyprspace": {
       "inputs": {
         "hyprland": [
@@ -1089,6 +1109,7 @@
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "hyprpanel": "hyprpanel",
+        "hyprscratch": "hyprscratch",
         "hyprspace": "hyprspace",
         "nixarr": "nixarr",
         "nixcord": "nixcord",
