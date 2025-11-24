@@ -8,21 +8,29 @@
 | -- | -- |
 | Switch Workspace | SUPER + {Number} |
 | Move app to Workspace | SHIFT + SUPER + {Number} |
-| Powermenu | SUPER + X |
-| Launcher | SUPER + D |
-| Quickmenu | SUPER + C |
-| Toggle HyprFocus | SUPER + T |
-| Close window | SUPER + Q |
-| Toggle Floating | SUPER + SPACE |
-| Toggle Fullscreen | $ALTRETURN |
-| Move focus left | SUPER + left |
-| Move focus Right | SUPER + right |
-| Move focus Up | SUPER + up |
-| Move focus Down | SUPER + down |
-| Screenshot region | SUPER + PRINT |
-| Screenshot window | SHIFT + SUPER + PRINT |
-| Toggle hyprpanel | SHIFT + SUPER + T |
-| Toggle night shift | SUPER + F2 |
+| Powermenu | SUPER +  X |
+| Launcher | SUPER +  D |
+| Toggle HyprFocus | SUPER +  period |
+| Close window | SUPER +  Q |
+| Toggle Floating | SUPER +  SPACE |
+| Toggle Fullscreen | $ALT RETURN |
+| Move focus left | SUPER +  left |
+| Move focus Right | SUPER +  right |
+| Move focus Up | SUPER +  up |
+| Move focus Down | SUPER +  down |
+| Screenshot region | SUPER +  PRINT |
+| Screenshot window | SHIFT + SUPER +  PRINT |
+| Toggle hyprpanel | SHIFT + SUPER +  B |
+| Toggle night shift | SUPER +  F2 |
+| $mod, B, exec, hyprscratch toggle btop" | SUPER +  B |
+| $mod, N, exec, hyprscratch toggle nixy" | SUPER +  N |
+| $mod, M, exec, hyprscratch toggle note" | SUPER +  M |
+| $mod, slash, exec, hyprscratch toggle quickterm" | SUPER +  slash |
+| $mod ALT, S, movetoworkspacesilent, special" | $mod ALT S |
+| $mod ALT, S, movetoworkspace, previous" | $mod ALT S |
+| $mod, S, togglespecialworkspace" | SUPER +  S |
+| $mod, H, workspace, e-1" | SUPER +  H |
+| $mod, L, workspace, e+1" | SUPER +  L |
 | Move Window (mouse) | SUPER + mouse:272 |
 | Resize Window (mouse) | SUPER + R |
 | Toggle Mute | XF86AudioMute |
