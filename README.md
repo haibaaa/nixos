@@ -1,8 +1,14 @@
 # todo
+- [ ] windowrules hypr
+- [ ] wofi --> rofi
+- [ ] turn off waybar by default
+- [ ] scripts for nixy 
+    - [ ] remove wallpapers things
+    - [ ] run hyprctl reload 
+    - [ ] scripts to that dev can be faster
 - [ ] set-up niri 
 - [x] change login --> sddm
     - [ ] personalize maybe
-- [ ] wofi --> rofi
 - [ ] wallpaper manager
     - [ ] swaybg
 - [ ] lockscreen with luaPam and minimal exitscreen

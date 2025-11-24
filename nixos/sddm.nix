@@ -2,10 +2,9 @@
 {
   pkgs,
   inputs,
-  config,
   ...
 }: let
-  sddm-astronaut = pkgs.sddm-astronaut.override {
+  custom-sddm-astronaut = pkgs.sddm-astronaut.override {
     embeddedTheme = "japanese_aesthetic";
   };
 in {
@@ -23,5 +22,9 @@ in {
     };
   };
 
-  environment.systemPackages = [sddm-astronaut];
+  environment.systemPackages = [
+    custom-sddm-astronaut
+    pkgs.sddm-astronaut
+    pkgs.kdePackages.qtmultimedia
+  ];
 }
