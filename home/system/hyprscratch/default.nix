@@ -46,7 +46,7 @@
         title = "scratchpad_note";
         class = "kitty";
         command = "kitty -o font_size=15 --title scratchpad_note -e nvim -c 'Neorg index'";
-        rules = "size 95% 50%; move 1% 49%";
+        rules = "size 95% 50%; move 3% 47%";
         options = "cover persist sticky";
       };
     };

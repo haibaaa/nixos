@@ -83,6 +83,6 @@
     };
 
     polarity = "dark";
-    image = ../wallpapers/the-cloud-is-hidding-the-moon_dark.png;
+    image = ../wall/bg.png;
   };
 }

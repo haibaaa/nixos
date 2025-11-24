@@ -31,6 +31,7 @@
     # System (Desktop environment like stuff)
     ../../home/system/hyprland
     ../../home/system/hyprlock
+    # ../../home/system/swaylock
     ../../home/system/hyprpanel
     ../../home/system/hyprpaper
     ../../home/system/wofi
@@ -63,6 +64,8 @@
 
       qutebrowser
       # firefox
+      fira-code
+      material-design-icons
       presenterm #presentations
       glow #md reader
 

@@ -1,14 +1,18 @@
 # todo
 - [ ] set-up niri 
-- [ ] change login --> sddm
+- [x] change login --> sddm
+    - [ ] personalize maybe
 - [ ] wofi --> rofi
 - [ ] wallpaper manager
+    - [ ] swaybg
 - [ ] lockscreen with luaPam and minimal exitscreen
+    - only works for awesomewm :(
     - https://github.com/raexera/yoru
-- [ ] swaybg
 - [ ] hyprpanel --> waybar
+- [x] silent desk
 - [ ] nvf 
     - [ ] turn off fkin snacks.flash
+        - [ ] change keybind at least
     - [ ] leetcode.nvim
         - [x] installation
         - [ ] copy configs from arch
