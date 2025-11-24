@@ -10,7 +10,7 @@
 
   systemd.user.services.hyprscratch = {
     Unit = {
-      After = ["hyprland.service" "graphical-session-pre.target"];
+      After = ["graphical-session-pre.target" "hyprland.service"];
       PartOf = ["graphical-session.target"];
       Wants = ["hyprland.service"];
     };
@@ -21,7 +21,7 @@
       RestartSec = "5s";
     };
     Install = {
-      WantedBy = ["graphical-session.target"];
+      WantedBy = ["graphical-session-pre.target"];
     };
   };
 
@@ -31,7 +31,7 @@
       btop = {
         title = "scratchpad_btop";
         class = "kitty";
-        command = "kitty-o font_size=12 --title scratchpad_btop -e btop";
+        command = "kitty -o font_size=12 --title scratchpad_btop -e btop";
         rules = "size 80% 80%";
         options = "cover sticky";
       };
