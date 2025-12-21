@@ -53,6 +53,8 @@
       # staged for deletion
       # bitwarden # Password manager
       # ncspot
+      anki
+      sqlite
 
       qpdf
       geoclue2

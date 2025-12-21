@@ -1,4 +1,5 @@
 # todo
+- [ ] remove hyprscratch windows from hyprpanel
 - [ ] windowrules hypr
 - [ ] wofi --> rofi
 - [ ] turn off waybar by default
@@ -19,7 +20,7 @@
 - [ ] nvf 
     - [ ] turn off fkin snacks.flash
         - [ ] change keybind at least
-    - [ ] leetcode.nvim
+    - [x] leetcode.nvim
         - [x] installation
-        - [ ] copy configs from arch
+        - [x] copy configs from arch
     - [ ] zenmode --> cleans up everything
