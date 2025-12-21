@@ -42,6 +42,20 @@
         rules = "size 20% 40%; move 6% 53%";
         options = "cover sticky";
       };
+      qterm = {
+        title = "scratchpad_qterm";
+        class = "kitty";
+        command = "kitty --title scratchpad_qterm";
+        rules = "size 97% 87%";
+        options = "cover persist sticky";
+      };
+      lc = {
+        title = "scratchpad_lc";
+        class = "kitty";
+        command = "kitty --title scratchpad_lc -e nvim -c 'Leet' -c 'sleep 1000m' -c 'Leet list'";
+        rules = "size 87% 87%";
+        options = "cover persist sticky";
+      };
       note = {
         title = "scratchpad_note";
         class = "kitty";

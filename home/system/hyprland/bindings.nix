@@ -26,9 +26,10 @@
         "$mod, F2, exec, night-shift" # Toggle night shift
 
         "$mod, B, exec, hyprscratch toggle btop"
+        "$shiftMod, L, exec, hyprscratch toggle lc"
         "$mod, N, exec, hyprscratch toggle nixy"
         "$mod, M, exec, hyprscratch toggle note"
-        "$mod, slash, exec, hyprscratch toggle quickterm"
+        "$mod, slash, exec, hyprscratch toggle qterm"
 
         "$mod ALT, S, movetoworkspacesilent, special"
         "$mod ALT, S, movetoworkspace, previous"
