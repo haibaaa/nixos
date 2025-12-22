@@ -1,5 +1,15 @@
 {pkgs, ...}: {
   programs.nvf.settings.vim.lazy.plugins = {
+    "nvim-biscuits" = {
+      package = pkgs.vimPlugins.nvim-biscuits;
+      setupOpts = {};
+    };
+    "twilight.nvim" = {
+      package = pkgs.vimPlugins.twilight-nvim;
+      setupOpts = {
+        context = 4;
+      };
+    };
     "leetcode.nvim" = {
       package = pkgs.vimPlugins.leetcode-nvim;
       setupOpts = {

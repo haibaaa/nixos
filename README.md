@@ -1,4 +1,5 @@
 # todo
+- [ ] get nvim-biscuits working
 - [ ] remove hyprscratch windows from hyprpanel
 - [ ] windowrules hypr
 - [ ] wofi --> rofi
@@ -17,4 +18,4 @@
 - [ ] nvf 
     - [ ] turn off fkin snacks.flash
         - [ ] change keybind at least
-    - [ ] zenmode --> cleans up everything
+    - [x] zenmode --> cleans up everything

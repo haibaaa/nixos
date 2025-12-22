@@ -91,6 +91,13 @@
 
       # UI
       {
+        key = "<C-z>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>Z<cr>";
+        desc = "Toggle zenmode";
+      }
+      {
         key = "<leader>uw";
         mode = "n";
         silent = true;
