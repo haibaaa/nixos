@@ -1,10 +1,6 @@
 # Hyprland is a dynamic tiling Wayland compositor that is highly customizable and performant.
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}: let
+{ pkgs, config, lib, ... }:
+let
   # border-size = config.theme.border-size;
   border-size = 0;
   gaps-in = config.theme.gaps-in;
@@ -16,12 +12,8 @@
   keyboardLayout = config.var.keyboardLayout;
   background = "rgb(" + config.lib.stylix.colors.base00 + ")";
 in {
-  imports = [
-    ./animations.nix
-    ./bindings.nix
-    ./polkitagent.nix
-    ./hyprspace.nix
-  ];
+  imports =
+    [ ./animations.nix ./bindings.nix ./polkitagent.nix ./hyprspace.nix ];
 
   home.packages = with pkgs; [
     qt5.qtwayland
@@ -64,8 +56,9 @@ in {
 
       exec-once = [
         "dbus-update-activation-environment --systemd --all &"
-        "systemctl --user enable --now hyprpaper.service &"
-        # "systemctl --user enable --now nextcloud-client.service  &"
+        "noctalia-shell &"
+        # "systemctl --user enable --now hyprpaper.service &"
+        # "systemctl --user enable --now nextcloud-client.service &"
         "hyprscratch init  &"
       ];
 
@@ -125,10 +118,7 @@ in {
           render_power = 3;
         };
         blur = {
-          enabled =
-            if blur
-            then "true"
-            else "false";
+          enabled = if blur then "true" else "false";
           size = 18;
         };
       };
@@ -183,7 +173,7 @@ in {
         "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
       ];
 
-      layerrule = ["noanim, launcher" "noanim, ^ags-.*"];
+      layerrule = [ "noanim, launcher" "noanim, ^ags-.*" ];
 
       input = {
         kb_layout = keyboardLayout;
