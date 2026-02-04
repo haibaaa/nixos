@@ -46,11 +46,11 @@ in {
         #window {
           background-color: ${background};
           color: ${foreground};
-          border-radius: ${toString rounding}px;
+          border-radius: 2;
         }
 
         #outer-box {
-          padding: 20px;
+          padding: 0px;
         }
 
         #input {
@@ -93,7 +93,7 @@ in {
 
         #input,
         #entry:selected {
-          border-radius: ${toString rounding}px;
+          border-radius: 2;
         }
       '';
   };

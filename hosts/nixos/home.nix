@@ -1,8 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{ pkgs, config, ... }: {
   imports = [
     # Mostly user-specific configuration
     ./variables.nix
@@ -10,7 +6,7 @@
     # Programs
     ../../home/programs/tmux
     ../../home/programs/kitty
-    ../../home/programs/nvf
+    # ../../home/programs/nvf
     ../../home/programs/shell
     ../../home/programs/fetch
     ../../home/programs/git
@@ -32,7 +28,7 @@
     ../../home/system/hyprland
     ../../home/system/hyprlock
     # ../../home/system/swaylock
-    ../../home/system/hyprpanel
+    # ../../home/system/hyprpanel
     ../../home/system/hyprpaper
     ../../home/system/wofi
     ../../home/system/zathura
@@ -40,6 +36,7 @@
     ../../home/system/udiskie
     ../../home/system/hypridle
     ../../home/system/clipman
+    ../../home/system/noctalia
 
     # hyprscratch input
     ../../home/system/hyprscratch
@@ -52,26 +49,37 @@
     packages = with pkgs; [
       # staged for deletion
       # bitwarden # Password manager
+      # nix-search-tv
+      # firefox
       # ncspot
+
+      linux-wifi-hotspot
+      caligula
+
       anki
+      criterion
+      aria2
+      woeusb
+      opencode
       sqlite
 
+      stow
+      neovim
+      luarocks
+      lua
       qpdf
       geoclue2
 
       zed-editor
       helix
-      # because thunar is ass
       yazi
 
       qutebrowser
-      # firefox
       fira-code
       material-design-icons
-      presenterm #presentations
-      glow #md reader
+      presenterm # presentations
+      glow # md reader
 
-      # Apps
       github-cli # Github cli
       vlc # Video player
       blanket # White-noise app
@@ -91,6 +99,7 @@
       # Dev
       go
       rustup
+
       uv
       jdk25
       bun
@@ -126,7 +135,7 @@
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
-    file.".face.icon" = {source = ./profile_picture.png;};
+    file.".face.icon" = { source = ./profile_picture.png; };
 
     # Don't touch this
     stateVersion = "24.05";

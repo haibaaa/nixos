@@ -6,7 +6,7 @@
         "$shiftMod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e tmux" # tmux
         "$mod, E, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e yazi"
         "$mod, V, exec, clipboard" # Clipboard picker with wofi
-        "$mod, K, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
+        "$shiftMod, L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
         "$mod, X, exec, powermenu" # Powermenu
         "$mod, D, exec, menu" # Launcher
         "$mod, period, exec, hyprfocus-toggle" # Toggle HyprFocus
@@ -26,7 +26,7 @@
         "$mod, F2, exec, night-shift" # Toggle night shift
 
         "$mod, B, exec, hyprscratch toggle btop"
-        "$shiftMod, L, exec, hyprscratch toggle lc"
+        "$shiftMod, C, exec, hyprscratch toggle lc"
         "$mod, N, exec, hyprscratch toggle nixy"
         "$mod, M, exec, hyprscratch toggle note"
         "$mod, slash, exec, hyprscratch toggle qterm"

@@ -78,7 +78,7 @@
         vim.keymap.set("n", "<leader>ld", ":Leet desc<CR>", { desc = "LeetCode: Show description" })
         vim.keymap.set("n", "<leader>lr", ":Leet run<CR>", { desc = "LeetCode: Run code" })
         vim.keymap.set("n", "<leader>lt", ":Leet test<CR>", { desc = "LeetCode: Test with input" })
-        vim.keymap.set("n", "<leader>ls", ":Leet submit<CR>", { desc = "LeetCode: Submit solution" })
+        vim.keymap.set("n", "<leader>lp", ":Leet submit<CR>", { desc = "LeetCode: Submit solution" })
         vim.keymap.set("n", "<leader>lc", ":Leet console<CR>", { desc = "LeetCode: Open console" })
         vim.keymap.set("n", "<leader>lm", ":Leet menu<CR>", { desc = "LeetCode: menu" })
       '';

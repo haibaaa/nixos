@@ -17,9 +17,9 @@
       DisableSetDesktopBackground = true;
       DontCheckDefaultBrowser = true;
       HomepageURL = "https://start.hadi.diy";
-      StartPage = "homepage";
+      StartPage = "";
       NewTabPage = true;
-      OfferToSaveLogins = false;
+      OfferToSaveLogins = true;
       # find more options here: https://mozilla.github.io/policy-templates/
     };
   };

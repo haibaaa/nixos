@@ -30,7 +30,7 @@ in {
 
       nix_shell = {
         format = "[$symbol]($style) ";
-        symbol = "🐚";
+        symbol = "nsh";
         style = "";
       };
 
