@@ -23,7 +23,7 @@
 | Toggle hyprpanel | SHIFT + SUPER +  B |
 | Toggle night shift | SUPER +  F2 |
 | $mod, B, exec, hyprscratch toggle btop" | SUPER +  B |
-| $shiftMod, L, exec, hyprscratch toggle lc" | SHIFT + SUPER +  L |
+| $shiftMod, C, exec, hyprscratch toggle lc" | SHIFT + SUPER +  C |
 | $mod, N, exec, hyprscratch toggle nixy" | SUPER +  N |
 | $mod, M, exec, hyprscratch toggle note" | SUPER +  M |
 | $mod, slash, exec, hyprscratch toggle qterm" | SUPER +  slash |
