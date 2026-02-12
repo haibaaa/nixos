@@ -97,8 +97,8 @@
         ./hosts/nixos/home.nix # Reuses your existing home-manager logic
         {
           home = {
-            username = "yourusername";
-            homeDirectory = "/home/yourusername";
+            username = "viz";
+            homeDirectory = "/home/viz";
             stateVersion = "24.11";
           };
         }
