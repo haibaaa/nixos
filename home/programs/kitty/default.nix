@@ -1,17 +1,18 @@
 # Kitty is a fast, featureful, GPU based terminal emulator
-{
+{ lib, ... }: {
   programs.kitty = {
     enable = true;
     keybindings = {
       "ctrl+shift+tab" = "new_tab";
-      "ctrl+j" = ''kitten pass_keys.py bottom ctrl+j'';
-      "ctrl+k" = ''kitten pass_keys.py top    ctrl+k'';
-      "ctrl+h" = ''kitten pass_keys.py left   ctrl+h'';
-      "ctrl+l" = ''kitten pass_keys.py right  ctrl+l'';
+      "ctrl+j" = "kitten pass_keys.py bottom ctrl+j";
+      "ctrl+k" = "kitten pass_keys.py top    ctrl+k";
+      "ctrl+h" = "kitten pass_keys.py left   ctrl+h";
+      "ctrl+l" = "kitten pass_keys.py right  ctrl+l";
     };
     settings = {
       font_size = 21;
-      # background_opacity = 0.8;
+      background_blur = "";
+      background_opacity = lib.mkForce "0.97";
       scrollback_lines = 10000;
       initial_window_width = 1200;
       initial_window_height = 600;

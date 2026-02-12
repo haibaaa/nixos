@@ -1,4 +1,5 @@
-{ pkgs, config, ... }: {
+{ pkgs, config, ... }:
+{
   imports = [
     # Mostly user-specific configuration
     ./variables.nix
@@ -6,7 +7,7 @@
     # Programs
     ../../home/programs/tmux
     ../../home/programs/kitty
-    # ../../home/programs/nvf
+    ../../home/programs/nvf
     ../../home/programs/shell
     ../../home/programs/fetch
     ../../home/programs/git
@@ -54,10 +55,10 @@
       # ncspot
 
       linux-wifi-hotspot
+      nix-ld
       caligula
 
       anki
-      criterion
       aria2
       woeusb
       opencode
@@ -65,8 +66,6 @@
 
       stow
       neovim
-      luarocks
-      lua
       qpdf
       geoclue2
 
@@ -135,7 +134,9 @@
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
-    file.".face.icon" = { source = ./profile_picture.png; };
+    file.".face.icon" = {
+      source = ./profile_picture.png;
+    };
 
     # Don't touch this
     stateVersion = "24.05";

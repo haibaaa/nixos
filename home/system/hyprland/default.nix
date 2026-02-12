@@ -2,9 +2,11 @@
 { pkgs, config, lib, ... }:
 let
   # border-size = config.theme.border-size;
+  # gaps-in = config.theme.gaps-in;
+  # gaps-out = config.theme.gaps-out;
+  gaps-in = 4;
+  gaps-out = 4;
   border-size = 0;
-  gaps-in = config.theme.gaps-in;
-  gaps-out = config.theme.gaps-out;
   active-opacity = config.theme.active-opacity;
   inactive-opacity = config.theme.inactive-opacity;
   rounding = config.theme.rounding;
@@ -113,13 +115,15 @@ in {
         inactive_opacity = inactive-opacity;
         rounding = rounding;
         shadow = {
-          enabled = true;
-          range = 20;
-          render_power = 3;
+          enabled = false;
+          # enabled = true;
+          # range = 20;
+          # render_power = 3;
         };
         blur = {
-          enabled = if blur then "true" else "false";
-          size = 18;
+          enabled = false;
+          # enabled = if blur then "true" else "false";
+          # size = 18;
         };
       };
 
@@ -146,7 +150,6 @@ in {
         "pin, tag:modal"
         "center, tag:modal"
         # telegram media viewer
-        "float, title:^(Media viewer)$"
 
         # Bitwarden extension
         "float, title:^(.*Bitwarden Password Manager.*)$"
@@ -156,8 +159,8 @@ in {
         "size 360 490, class:^(org.gnome.Calculator)$"
 
         # make Firefox/Zen PiP window floating and sticky
-        "float, title:^(Picture-in-Picture)$"
-        "pin, title:^(Picture-in-Picture)$"
+        # "float, title:^(Picture-in-Picture)$"
+        # "pin, title:^(Picture-in-Picture)$"
 
         # idle inhibit while watching videos
         "idleinhibit focus, class:^(mpv|.+exe|celluloid)$"
