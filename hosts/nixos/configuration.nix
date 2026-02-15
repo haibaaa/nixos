@@ -24,6 +24,10 @@
 
   home-manager.users."${config.var.username}" = import ./home.nix;
 
+  environment.sessionVariables = {
+    FLAKE = "/home/haiba/.config/nixos";
+  };
+
   # Enable Docker service with rootless mode
   virtualisation.docker = {
     enable = true;

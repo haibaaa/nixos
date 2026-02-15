@@ -1,5 +1,8 @@
-{ pkgs, config, ... }:
 {
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     # Mostly user-specific configuration
     ./variables.nix
@@ -59,6 +62,7 @@
       caligula
 
       anki
+      nh
       aria2
       woeusb
       opencode
