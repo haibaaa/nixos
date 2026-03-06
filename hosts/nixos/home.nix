@@ -57,7 +57,9 @@
       # firefox
       # ncspot
 
+      ghostty
       linux-wifi-hotspot
+      shotcut
       nix-ld
       caligula
 
