@@ -10,6 +10,7 @@
     ../../nixos/fonts.nix
     ../../nixos/home-manager.nix
     ../../nixos/nix.nix
+    ../../nixos/nix-ld.nix
     ../../nixos/systemd-boot.nix
     ../../nixos/sddm.nix
     ../../nixos/users.nix
