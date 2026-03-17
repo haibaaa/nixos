@@ -1,6 +1,10 @@
 # Hyprland is a dynamic tiling Wayland compositor that is highly customizable and performant.
-{ pkgs, config, lib, ... }:
-let
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}: let
   # border-size = config.theme.border-size;
   # gaps-in = config.theme.gaps-in;
   # gaps-out = config.theme.gaps-out;
@@ -14,8 +18,7 @@ let
   keyboardLayout = config.var.keyboardLayout;
   background = "rgb(" + config.lib.stylix.colors.base00 + ")";
 in {
-  imports =
-    [ ./animations.nix ./bindings.nix ./polkitagent.nix ./hyprspace.nix ];
+  imports = [./animations.nix ./bindings.nix ./polkitagent.nix ./hyprspace.nix];
 
   home.packages = with pkgs; [
     qt5.qtwayland
@@ -176,7 +179,7 @@ in {
         "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
       ];
 
-      layerrule = [ "noanim, launcher" "noanim, ^ags-.*" ];
+      layerrule = ["noanim, launcher" "noanim, ^ags-.*"];
 
       input = {
         kb_layout = keyboardLayout;

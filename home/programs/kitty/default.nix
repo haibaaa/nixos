@@ -1,5 +1,5 @@
 # Kitty is a fast, featureful, GPU based terminal emulator
-{ lib, ... }: {
+{lib, ...}: {
   programs.kitty = {
     enable = true;
     keybindings = {
@@ -12,7 +12,7 @@
     settings = {
       font_size = 21;
       background_blur = "";
-      background_opacity = lib.mkForce "0.97";
+      background_opacity = lib.mkForce "1";
       scrollback_lines = 10000;
       initial_window_width = 1200;
       initial_window_height = 600;
