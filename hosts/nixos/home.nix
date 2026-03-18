@@ -22,6 +22,10 @@
     ../../home/programs/discord
     ../../home/programs/tailscale
     ../../home/programs/qutebrowser
+    ../../home/programs/cli
+    ../../home/programs/zed-editor
+    ../../home/programs/obs-studio
+    ../../home/programs/mpv
 
     # personal
     ../../home/programs/yazi
@@ -65,8 +69,6 @@
       caligula
 
       anki
-      nh
-      aria2
       woeusb
       opencode
       sqlite
@@ -75,15 +77,11 @@
       qpdf
       geoclue2
 
-      zed-editor
-      helix
-
       fira-code
       material-design-icons
       presenterm # presentations
       glow # md reader
 
-      github-cli # Github cli
       vlc # Video player
       blanket # White-noise app
       obsidian # Note taking app
@@ -94,7 +92,6 @@
       resources # Ressource monitor
       gnome-clocks # Clocks app
       gnome-text-editor # Basic graphic text editor
-      mpv # Video player
 
       # Privacy
       session-desktop # Session app, private messages
@@ -110,8 +107,6 @@
       openssl
       prisma-engines
       python3
-      jq
-      just
       pnpm
       air
       duckdb
@@ -122,19 +117,13 @@
       optipng
       jpegoptim
       pfetch
-      btop
-      fastfetch
 
       # Just cool
-      obs-studio
       peaclock
       cbonsai
       pipes
       gnumake
       cmatrix
-
-      # Backup
-      vscode
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
