@@ -21,6 +21,7 @@
     ../../home/programs/zen
     ../../home/programs/discord
     ../../home/programs/tailscale
+    ../../home/programs/qutebrowser
 
     # personal
     ../../home/programs/yazi
@@ -71,15 +72,12 @@
       sqlite
 
       stow
-      neovim
       qpdf
       geoclue2
 
       zed-editor
       helix
-      yazi
 
-      qutebrowser
       fira-code
       material-design-icons
       presenterm # presentations
