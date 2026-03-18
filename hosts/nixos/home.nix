@@ -26,6 +26,10 @@
     ../../home/programs/zed-editor
     ../../home/programs/obs-studio
     ../../home/programs/mpv
+    ../../home/programs/dev
+    ../../home/programs/gui
+    ../../home/programs/rice
+    ../../home/programs/utils
 
     # personal
     ../../home/programs/yazi
@@ -61,69 +65,6 @@
       # nix-search-tv
       # firefox
       # ncspot
-
-      ghostty
-      linux-wifi-hotspot
-      shotcut
-      nix-ld
-      caligula
-
-      anki
-      woeusb
-      opencode
-      sqlite
-
-      stow
-      qpdf
-      geoclue2
-
-      fira-code
-      material-design-icons
-      presenterm # presentations
-      glow # md reader
-
-      vlc # Video player
-      blanket # White-noise app
-      obsidian # Note taking app
-      planify # Todolists
-      gnome-calendar # Calendar
-      textpieces # Manipulate texts
-      curtail # Compress images
-      resources # Ressource monitor
-      gnome-clocks # Clocks app
-      gnome-text-editor # Basic graphic text editor
-
-      # Privacy
-      session-desktop # Session app, private messages
-
-      # Dev
-      go
-      rustup
-
-      uv
-      jdk25
-      bun
-      nodejs
-      openssl
-      prisma-engines
-      python3
-      pnpm
-      air
-      duckdb
-
-      # Utils
-      zip
-      unzip
-      optipng
-      jpegoptim
-      pfetch
-
-      # Just cool
-      peaclock
-      cbonsai
-      pipes
-      gnumake
-      cmatrix
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
