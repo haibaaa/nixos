@@ -38,14 +38,6 @@
               {"title": "Figma", "url": "https://figma.com", "icon": ""},
               {"title": "Server", "url": "https://home.anotherhadi.com", "icon": ""}
             ]
-          },
-          {
-            "name": "Work",
-            "links": [
-              {"title": "Outlook", "url": "https://outlook.office.com/mail/", "icon": "󰴢"},
-              {"title": "Office", "url": "https://www.office.com/?auth=2", "icon": "󰏆"},
-              {"title": "Teams", "url": "https://teams.microsoft.com/_", "icon": "󰊻"}
-            ]
           }
         ]
       }
@@ -82,7 +74,7 @@
     };
   };
 in {
-  imports = [../duckduckgo-colorscheme];
+  # imports = [../duckduckgo-colorscheme];
 
   programs.qutebrowser = {
     enable = true;
@@ -101,13 +93,8 @@ in {
 
     quickmarks = {
       home = "${homepage}/build/index.html";
-      server = "https://home.anotherhadi.com";
-      jack = "https://home.anotherhadi.com";
       mynixos = "https://mynixos.com";
       github = "https://github.com";
-      outlook = "https://outlook.office.com/mail/";
-      office = "https://www.office.com/?auth=2";
-      teams = "https://teams.microsoft.com/_";
       casa = "http://192.168.2.16:8081/#/";
       proton = "https://mail.proton.me/u/0/inbox";
       cloudflare-one = "https://one.dash.cloudflare.com/";
@@ -243,11 +230,11 @@ in {
     };
 
     extraConfig = ''
-      config.unbind("gm")
-      config.unbind("gd")
-      config.unbind("gb")
-      config.unbind("tl")
-      config.unbind("gt")
+      # config.unbind("gm")
+      # config.unbind("gd")
+      # config.unbind("gb")
+      # config.unbind("tl")
+      # config.unbind("gt")
 
       c.tabs.padding = {"bottom": 6, "left": 7, "right": 7, "top": 6}
       c.statusbar.padding = {"bottom": 6, "left": 7, "right": 7, "top": 6}

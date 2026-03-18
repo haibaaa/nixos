@@ -22,6 +22,7 @@
     ../../home/programs/discord
     ../../home/programs/tailscale
     ../../home/programs/qutebrowser
+    ../../home/programs/antigravity
     ../../home/programs/cli
     ../../home/programs/zed-editor
     ../../home/programs/obs-studio

@@ -8,6 +8,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nix-ld.url = "github:Mic92/nix-ld";
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # Home Manager
     home-manager = {
       url = "github:nix-community/home-manager";
