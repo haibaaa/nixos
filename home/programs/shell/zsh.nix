@@ -9,8 +9,17 @@
 in {
   home.packages = with pkgs; [bat ripgrep tldr sesh];
 
-  # Add go binaries to the PATH
-  home.sessionPath = ["$HOME/go/bin"];
+  # Add local binaries to the PATH
+  home.sessionPath = [
+    "$HOME/.local/share/go/bin"
+    "$HOME/.bun/bin"
+    "$HOME/.local/bin"
+    "$HOME/.cargo/bin"
+  ];
+
+  home.sessionVariables = {
+    GOPATH = "$HOME/.local/share/go";
+  };
 
   programs.zsh = {
     enable = true;
@@ -28,7 +37,7 @@ in {
       size = 10000;
     };
 
-    profileExtra = lib.optionalString (config.home.sessionPath != []) ''
+    envExtra = lib.optionalString (config.home.sessionPath != []) ''
       export PATH="$PATH''${PATH:+:}${
         lib.concatStringsSep ":" config.home.sessionPath
       }"
