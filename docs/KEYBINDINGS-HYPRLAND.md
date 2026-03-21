@@ -8,6 +8,10 @@
 | -- | -- |
 | Switch Workspace | SUPER + {Number} |
 | Move app to Workspace | SHIFT + SUPER + {Number} |
+| tmux | SHIFT + SUPER + RETURN |
+| $mod, E, exec, uwsm app -- ${pkgs.kitty}/bin/kitty -e yazi" | SUPER +  E |
+| Clipboard picker with wofi | SUPER +  V |
+| Lock | SHIFT + SUPER +  L |
 | Powermenu | SUPER +  X |
 | Launcher | SUPER +  D |
 | Toggle HyprFocus | SUPER +  period |
@@ -20,8 +24,8 @@
 | Move focus Down | SUPER +  down |
 | Screenshot region | SUPER +  PRINT |
 | Screenshot window | SHIFT + SUPER +  PRINT |
-| Toggle hyprpanel | SHIFT + SUPER +  B |
 | Toggle night shift | SUPER +  F2 |
+| Toggle qc | SUPER +  F1 |
 | $mod, B, exec, hyprscratch toggle btop" | SUPER +  B |
 | $shiftMod, C, exec, hyprscratch toggle lc" | SHIFT + SUPER +  C |
 | $mod, N, exec, hyprscratch toggle nixy" | SUPER +  N |
