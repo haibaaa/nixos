@@ -39,7 +39,7 @@
     treesitter = {
       enable = true;
       autotagHtml = true;
-      context.enable = true;
+      # context.enable = true;
       highlight.enable = true;
       grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
         typescript # in language settings only tsx gets enabled, not typescript
@@ -89,6 +89,7 @@
       clang.enable = true;
       astro.enable = true;
       go.enable = true;
+      java.enable = true;
       python.enable = true;
       markdown = {
         enable = true; # keep markdown support enabled
@@ -111,7 +112,7 @@
       };
       css.enable = true;
       svelte.enable = true;
-      html.enable = true;
+      # html.enable = true;
       bash.enable = true;
       nix.enable = true;
       tailwind.enable = true;

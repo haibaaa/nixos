@@ -11,13 +11,13 @@
     };
     keymaps = [
       # General Mappings
-      {
-        key = "s";
-        mode = "n";
-        silent = true;
-        action = "<cmd>lua require('flash').jump()<cr>";
-        desc = "Flash";
-      }
+      # {
+      #   key = "s";
+      #   mode = "n";
+      #   silent = true;
+      #   action = "<cmd>lua require('flash').jump()<cr>";
+      #   desc = "Flash";
+      # }
       {
         key = "K";
         mode = "n";

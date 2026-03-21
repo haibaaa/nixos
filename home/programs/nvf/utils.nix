@@ -2,10 +2,10 @@
   programs.nvf.settings.vim = {
     undoFile.enable = true;
     utility = {
-      motion.flash-nvim.enable = true;
-      outline.aerial-nvim.enable = true;
+      # motion.flash-nvim.enable = true;
+      # outline.aerial-nvim.enable = true;
     };
-    tabline.nvimBufferline.enable = true;
+    # tabline.nvimBufferline.enable = true;
     notes.todo-comments.enable = true;
     # assistant.copilot = {
     #   enable = true;
@@ -45,9 +45,9 @@
     };
     visuals = {
       rainbow-delimiters.enable = true;
-      nvim-scrollbar = {
-        enable = false;
-      };
+      # nvim-scrollbar = {
+      #   enable = false;
+      # };
     };
   };
 }

@@ -3,12 +3,12 @@
     viAlias = false;
     vimAlias = true;
     withNodeJs = true;
-    # syntaxHighlighting = true;
+    syntaxHighlighting = true;
     options = {
       number = false;
       autoindent = true;
       smartindent = true;
-      shiftwidth = 2;
+      shiftwidth = 4;
       foldlevel = 99;
       foldcolumn = "auto:1";
       mousescroll = "ver:1,hor:1";
@@ -17,7 +17,7 @@
       signcolumn = "yes";
       tabstop = 2;
       softtabstop = 2;
-      wrap = false;
+      # wrap = false;
     };
     globals = {
       navic_silence = true; # navic tries to attach multiple LSPs and fails
