@@ -65,6 +65,7 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
+      overlays = [inputs.noctalia.overlays.default];
       config = {
         permittedInsecurePackages = ["openssl-1.1.1w"];
         allowUnfree = true;

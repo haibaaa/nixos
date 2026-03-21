@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   wayland.windowManager.hyprland.settings = {
     bind =
       [
@@ -22,9 +26,8 @@
         "$mod, PRINT, exec, screenshot region" # Screenshot region
         "$shiftMod, PRINT, exec, screenshot window" # Screenshot window
 
-        "$shiftMod, B, exec, hyprpanel-toggle" # Toggle hyprpanel
         "$mod, F2, exec, night-shift" # Toggle night shift
-
+        "$mod, F1, exec, ${inputs.noctalia.packages.${pkgs.system}.default}/bin/noctalia-shell ipc call bar toggle" # Toggle qc
         "$mod, B, exec, hyprscratch toggle btop"
         "$shiftMod, C, exec, hyprscratch toggle lc"
         "$mod, N, exec, hyprscratch toggle nixy"
