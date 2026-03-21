@@ -235,7 +235,7 @@ in {
       # config.unbind("gb")
       # config.unbind("tl")
       # config.unbind("gt")
-
+      config.set('content.headers.user_agent', 'Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0', 'https://accounts.google.com/*')
       c.tabs.padding = {"bottom": 6, "left": 7, "right": 7, "top": 6}
       c.statusbar.padding = {"bottom": 6, "left": 7, "right": 7, "top": 6}
 
