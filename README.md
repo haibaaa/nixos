@@ -1,6 +1,5 @@
 # todo
 - [ ] get nvim-biscuits working
-- [ ] remove hyprscratch windows from hyprpanel
 - [ ] windowrules hypr
 - [ ] wofi --> rofi
 - [ ] scripts for nixy 
