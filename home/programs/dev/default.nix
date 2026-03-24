@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     # Dev languages and environments
     go
+    zig
     rustup
     uv
     python3

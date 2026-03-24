@@ -91,6 +91,7 @@
       go.enable = true;
       java.enable = true;
       python.enable = true;
+      rust.enable = true;
       markdown = {
         enable = true; # keep markdown support enabled
         extensions = {
