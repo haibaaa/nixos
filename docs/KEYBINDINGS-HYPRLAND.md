@@ -26,7 +26,7 @@
 | Screenshot window | SHIFT + SUPER +  PRINT |
 | Toggle night shift | SUPER +  F2 |
 | Toggle qc | SUPER +  F1 |
-| $mod, B, exec, hyprscratch toggle btop" | SUPER +  B |
+| $mod, B, exec, ${pkgs.qutebrowser}/bin/qutebrowser" | SUPER +  B |
 | $shiftMod, C, exec, hyprscratch toggle lc" | SHIFT + SUPER +  C |
 | $mod, N, exec, hyprscratch toggle nixy" | SUPER +  N |
 | $mod, M, exec, hyprscratch toggle note" | SUPER +  M |
