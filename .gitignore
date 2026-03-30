@@ -1,3 +1,4 @@
 .sops.yaml
 
+docs/*
 wallpapers/*
