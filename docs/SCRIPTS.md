@@ -98,3 +98,5 @@ Usefull quick scripts
 - `quickmenu` - Open a dropdown menu with shortcuts and scripts. (wofi)
 - `lock` - Lock the screen. (hyprlock)
 
+
+
