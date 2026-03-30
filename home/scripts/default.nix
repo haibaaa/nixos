@@ -2,6 +2,7 @@
   imports = [
     # personal
     ./hdmi
+    ./zaread
 
     ./nixy
     ./sounds

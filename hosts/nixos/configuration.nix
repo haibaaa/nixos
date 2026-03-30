@@ -29,6 +29,11 @@
     NH_FLAKE = "/home/haiba/.config/nixos";
   };
 
+  # set up pgsql
+  services.postgresql = {
+    enable = true;
+    package = pkgs.postgresql;
+  };
   # Enable Docker service with rootless mode
   virtualisation.docker = {
     enable = true;
